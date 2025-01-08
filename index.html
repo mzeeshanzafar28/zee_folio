@@ -739,13 +739,15 @@ jQuery(document).ready(function ($) {
         setInterval(function () {
             $(colors[index]).click(); // Simulate click on the current element
             index++;
+		        $('#darkMode-btn').click();
+
 
             // Reset index to 0 if it exceeds the length of the elements
             if (index >= colors.length) {
                 index = 0;
             }
         }, 2000); // 2 seconds interval
-    }, 4000); // Initial 2-second delay
+    }, 2000); // Initial 2-second delay
 });
 
 
